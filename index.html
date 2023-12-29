@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Abhaybg.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi,<br> I'm <span style="color: brown;">Abhay Pratp Singh</span><br> From India </h1>
+            </div>
+        </div>
+    </div>        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/rksingh.jpg"   alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 style="font-size: 60px; font-weight: 600; color: #fff;">About Me</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nam illo 
+                            accusantium non cumque ad voluptates, blanditiis corporis fugiat sint 
+                            voluptas praesentium mollitia, cum soluta, facere quibusdam? Sunt, dolor
+                             eius!Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                              minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                         deserunt?</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Designing Web Development</li>
+                                <li><span>Stack Developer</span><br>Frontend  Responsive Websites </li>
+                                <li><span>Web Designer</span><br>Designing  Multipages Websites with Backend usage </li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2024-Passout</span><br>I, m a fresher</li>
+                                <li><span>2023</span><br>I completed my  2 months Summer Training in @Techpile  Technology Software companay </li>
+                                <li><span>2024-</span><br>Designing  Multipages Websites with Backend usage </li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2019</span><br>High School Passout</li>
+                                <li><span>2021</span><br>Intemediate Passout </li>
+                                <li><span>2024</span><br>Polytechnic, Diploma in Information technology</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------Services----------->
+        <div id="services">
+            <div class="container">
+                <h1 style="font-size: 60px; font-weight: 600; color: #fff;">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code" style="color: rgb(157, 65, 222);"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quos enim, 
+                            ab impedit eveniet cupiditate vitae, laboriosam soluta, sed rerum asperiore</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-webflow" style="color: rgb(157, 65, 222);"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quos enim, 
+                            ab impedit eveniet cupiditate vitae, laboriosam soluta, sed rerum asperiore</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop" style="color: rgb(157, 65, 222);"></i>
+                        <h2>Website Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quos enim, 
+                            ab impedit eveniet cupiditate vitae, laboriosam soluta, sed rerum asperiore</p>
+                            <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------Portfolio------------------------>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 style="font-size: 60px; font-weight: 600; color: #fff;">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connect you to the talented people the world.
+                                Download it from play store.</p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connect you to the talented people the world.
+                                Download it from play store.</p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connect you to the talented people the world.
+                                Download it from play store.</p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-------------------------contact------------------------------->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 style="font-size: 60px; font-weight: 600; color: #fff;">My Work</h1>
+                        <p><i class="fas fa-paper-plane" style="color: rgb(83, 181, 219);"></i> @example.com</p>
+                        <p><i class="fas fa-phone fa-spin" style="color: rgb(114, 236, 114);" ></i> 06783873473</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook ico" style="color: rgb(106, 10, 249);" ></i></a>
+                            <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin ico" style="color: rgb(78, 85, 175);" ></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter ico" style="color:rgb(163, 163, 242);" ></i></a>
+                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram  ico " style="color: rgb(245, 23, 23);" ></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" class="btn btn2" style="color: rgb(169, 210, 210);">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="email" placeholder="Your Email"  required>
+                            <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                            <button type="submit" class="btn btn2" style="color: rgb(10, 0, 19);">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ <span style="color: rgb(222, 222, 41);">Abhay Pratap $ingh</span>. Made With <i class="fas fa-heart"></i> by East Tutorial</p>
+                
+            </div>
+        </div>
+        
+        <!----------------------jaqvascript------------------------------>
+
+        <script>
+
+            var tablinks =document.getElementsByClassName("tab-links");
+            var tabcontents =document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                
+                for(tablink of tabcontents){
+                    tablink.classList.remove("active-tab");
+                } 
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>   
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu (){
+                sidemeu.style.right ="0";
+            }
+            function closemenu (){
+                sidemeu.style.right ="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyRYxyxx50lTVEdhWrIz9bw3FPw8qVtLwE9aKRbdUFW_2JGQZKFiLVxSDMaxpNQld7lWg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML =""
+                    },5000
+                    )
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          
+</body>
+</html>
